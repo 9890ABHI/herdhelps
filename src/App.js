@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+
 import './App.css';
+import DownloadSection from './components/DownloadSection';
+import FeatureOne from './components/FeatureOne';
+import FeatureTwo from './components/FeatureTwo';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import VideoSection from './components/VideoSection';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+   <div className="flex flex-col items-center justify-center">
+      <Header/>
+      <FeatureOne/>
+      <FeatureTwo/>
+      <VideoSection/>
+      <DownloadSection/>
+      <Footer/>
+   </div>
+    </>
   );
 }
 
