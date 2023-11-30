@@ -11,7 +11,7 @@ import Slider from './components/Slider';
 function App() {
   return (
     <>
-   <div className="flex flex-col items-center justify-center  pt-[60px]">
+   <div className="flex flex-col items-center justify-center  pt-[60px] ">
       <Header/>
       <Slider/>
       <FeatureOne/>

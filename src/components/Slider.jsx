@@ -9,10 +9,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Slider = () => {
   return (
-    <div >
+    <div className='w-full' >
          <Carousel 
-            // autoPlay
-            // infiniteLoop
+            autoPlay
+            infiniteLoop
             swipeable={true}
             stopOnHover={true}
             showThumbs={false}
@@ -22,11 +22,11 @@ const Slider = () => {
             interval={1500}
             transitionTime={1000}
             
-            className=" overflow-hidden flex w-full h-[650px]"
+            className=" overflow-hidden flex w-full h-[650px] max-md:h-full"
             >
-                
+                <div>
                     <img src={b} className=''  alt='banner-1' />                     
-               
+                </div>               
 
                 <div>
                     <img src={c} alt='banner-2' />                    

@@ -5,12 +5,12 @@ import { TextField } from '@mui/material';
 const Footer = () => {
   return (
     <div className='relative flex w-full '>
-        <img src={bg} alt="" className='absolute z-0 inset-0 w-full' />
+        <img src={bg} alt="" className='absolute z-0 inset-0 w-full h-full object-cover' />
         <div className="flex flex-col w-full z-10 justify-center items-center py-16">
         <div className="text-lg font-bold text-[#39B54A] pb-5 ">CONTACT US</div>
-            <div className="text-4xl font-semibold text-center text-white pb-10">Reach out for help or just <br /> say hello </div>
-            <div className="flex justify-start items-start w-[70%] py-10 ">
-                <div className="flex flex-col bg-black bg-opacity-50 w-[60%]  py-16 px-10">
+            <div className="text-4xl max-md:text-2xl font-semibold text-center text-white pb-10">Reach out for help or just <br /> say hello </div>
+            <div className="flex justify-start items-start w-[70%] max-md:w-[90%]  py-10 max-md:flex-col max-md:flex-col-reverse ">
+                <div className="flex flex-col bg-black bg-opacity-50 w-[60%] max-md:w-full  py-16 px-10">
                     <h5 className='text-white text-lg font-bold pb-10'>SEND US A MESSAGE</h5>
                     <form action="" className='flex flex-col gap-10 text-white'> 
                     <TextField  sx={{
@@ -38,7 +38,7 @@ const Footer = () => {
                     </form>
                 </div>
 
-                <div className="bg-[#222222] w-[40%] pt-16 pb-[52px] px-10">
+                <div className="bg-[#222222] w-[40%] max-md:w-full pt-16 pb-[52px] px-10">
                 <h5 className='text-white text-lg font-bold '>CONTACT INFO</h5>
 
                   <div className="flex flex-col py-5 gap-5">                    
